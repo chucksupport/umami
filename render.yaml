@@ -3,7 +3,7 @@ services:
     name: umami
     runtime: node
     region: oregon
-    plan: basic-256mb
+    plan: starter
     buildCommand: npm install -g pnpm && pnpm install --frozen-lockfile && pnpm build
     startCommand: pnpm start
     healthCheckPath: /api/heartbeat
